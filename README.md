@@ -1,4 +1,4 @@
-# feathers-auth-0-rs-256-boilerplate
+# Feathers auth0 with RS-256 encryption boilerplate
 
 > Boilerplate application using feathers and Auth0 with RS256 encryption for user authentication.
 
