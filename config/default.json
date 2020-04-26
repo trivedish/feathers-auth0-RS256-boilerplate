@@ -9,9 +9,10 @@
   "authentication": {
     "entity": "user",
     "service": "users",
-    "secret": "M8IbhWWCZG5+67yK2ONvtXVSE8A=",
+    "secret": "oldmtLHb33kRAvQKuIb916ePc9g=",
     "authStrategies": [
-      "jwt"
+      "jwt",
+      "local"
     ],
     "jwtOptions": {
       "header": {
@@ -22,6 +23,10 @@
       "algorithm": "RS256",
       "expiresIn": "1d"
     },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
     "oauth": {
       "redirect": "/",
       "auth0": {
@@ -31,5 +36,5 @@
       }
     }
   },
-  "postgres": "postgres://postgres:@localhost:5432/feathers_auth_0_rs_256_boilerplate"
+  "postgres": "postgres://postgres:@localhost:5432/feathers"
 }
