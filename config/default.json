@@ -11,28 +11,23 @@
     "service": "users",
     "secret": "M8IbhWWCZG5+67yK2ONvtXVSE8A=",
     "authStrategies": [
-      "jwt",
-      "local"
+      "jwt"
     ],
     "jwtOptions": {
       "header": {
         "typ": "access"
       },
-      "audience": "https://yourdomain.com",
+      "audience": "https://nymf.auth0.com",
       "issuer": "feathers",
-      "algorithm": "HS256",
+      "algorithm": "RS256",
       "expiresIn": "1d"
-    },
-    "local": {
-      "usernameField": "email",
-      "passwordField": "password"
     },
     "oauth": {
       "redirect": "/",
       "auth0": {
-        "key": "<auth0 oauth key>",
-        "secret": "<auth0 oauth secret>",
-        "subdomain": "<auth0 subdomain>"
+        "key": "p5hPBIT1bna1ClvlvLOqfxU944RiauUY",
+        "secret": "9dEoC3ecbcfjkdlMK3-ipsiBTN7fIi0wBYdIHU1ObHMdUdsMTvaKDlhEPaz4JHzD",
+        "subdomain": "nymf.auth0.com"
       }
     }
   },
