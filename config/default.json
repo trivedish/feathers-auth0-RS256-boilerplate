@@ -36,5 +36,5 @@
       }
     }
   },
-  "postgres": "postgres://postgres:@localhost:5432/feathers"
+  "postgres": "postgres://postgres:@localhost:5432/feathers_sample"
 }

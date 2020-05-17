@@ -20,8 +20,8 @@
     "config": "config/"
   },
   "engines": {
-    "node": "^13.0.0",
-    "yarn": ">= 0.18.0"
+    "node": "^14.2.0",
+    "yarn": ">= 1.22.4"
   },
   "scripts": {
     "test": "yarn run compile && yarn run jest",
