@@ -1,4 +1,4 @@
-import { ServiceAddons } from '@feathersjs/feathers';
+import { ServiceAddons, Params } from '@feathersjs/feathers';
 import { AuthenticationService, JWTStrategy } from '@feathersjs/authentication';
 import { expressOauth, OAuthStrategy, OAuthProfile } from '@feathersjs/authentication-oauth';
 
