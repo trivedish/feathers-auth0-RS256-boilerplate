@@ -1,21 +1,27 @@
-import * as feathersAuthentication from '@feathersjs/authentication';
+// import * as feathersAuthentication from '@feathersjs/authentication';
 // Don't remove this comment. It's needed to format import lines nicely.
 
-const { authenticate } = feathersAuthentication.hooks;
+// const { authenticate } = feathersAuthentication.hooks;
 
 export default {
   before: {
     all: [],
-    find: [ authenticate('jwt') ],
-    get: [ authenticate('jwt') ],
-    create: [  ],
-    update: [  authenticate('jwt') ],
-    patch: [  authenticate('jwt') ],
-    remove: [ authenticate('jwt') ]
+    // find: [ authenticate('jwt') ],
+    // get: [ authenticate('jwt') ],
+    // create: [  ],
+    // update: [  authenticate('jwt') ],
+    // patch: [  authenticate('jwt') ],
+    // remove: [ authenticate('jwt') ]
+    find: [],
+    get: [],
+    create: [],
+    update: [],
+    patch: [],
+    remove: []
   },
 
   after: {
-    all: [ 
+    all: [
     ],
     find: [],
     get: [],
