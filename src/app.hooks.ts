@@ -1,9 +1,9 @@
-// Application hooks that run for every service
+import authenticate from './hooks/authenticate';// Application hooks that run for every service
 // Don't remove this comment. It's needed to format import lines nicely.
 
 export default {
   before: {
-    all: [],
+    all: [authenticate()],
     find: [],
     get: [],
     create: [],
