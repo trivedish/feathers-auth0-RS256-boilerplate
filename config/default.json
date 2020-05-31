@@ -14,12 +14,13 @@
       "jwt",
       "local"
     ],
+    "jwksUri": "https://nymf.auth0.com/.well-known/jwks.json",
     "jwtOptions": {
       "header": {
         "typ": "access"
       },
-      "audience": "https://nymf.auth0.com",
-      "issuer": "feathers",
+      "audience": "https://nym.com/backend-api",
+      "issuer": "https://nymf.auth0.com/",
       "algorithm": "RS256",
       "expiresIn": "1d"
     },
