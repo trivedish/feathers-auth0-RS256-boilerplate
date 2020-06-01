@@ -8,6 +8,10 @@ import feathers from '@feathersjs/feathers';
 import configuration from '@feathersjs/configuration';
 import express from '@feathersjs/express';
 
+import swaggerUi from 'swagger-ui-express';
+import YAML from 'yamljs';
+
+const swaggerDocument = YAML.load(`${__dirname}/../docs/openapi.yaml`);
 
 
 import { Application } from './declarations';
@@ -33,7 +37,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(favicon(path.join(app.get('public'), 'favicon.ico')));
 // Host the public folder
 app.use('/', express.static(app.get('public')));
-
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 // Set up Plugins and providers
 app.configure(express.rest());
 
